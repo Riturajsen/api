@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['ID']) && $_POST['ID']!="") {
 	$ID = $_POST['ID'];
-	$url = "http://localhost/Sameep/employee/api/api.php?ID=".$ID;
+	$url = "http://localhost/api/api.php?ID=".$ID;
 	
 	$client = curl_init($url);
 	curl_setopt($client,CURLOPT_RETURNTRANSFER,true);

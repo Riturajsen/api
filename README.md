@@ -27,7 +27,7 @@ restart();
 
 ```sh
 GO to output.php and use correct PATH 
-$url = "http://localhost/${PATH}".$ID; .
+$url = "http://localhost/${PATH}?ID=".$ID; 
 ```
 
 

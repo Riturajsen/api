@@ -4,7 +4,7 @@ header("Content-Type:application/json");
 if (isset($_GET['ID']) && $_GET['ID']!="") {
 	include('db.php');
 	$ID = $_GET['ID'];
-	$result = mysqli_query($con,"SELECT * FROM `employeedetail` WHERE ID=$ID");
+	$result = mysqli_query($con,"SELECT * FROM `api` WHERE ID=$ID");
 	if(mysqli_num_rows($result)>0){
 	$row = mysqli_fetch_array($result);
 	$EmpFname = $row['EmpFname'];
